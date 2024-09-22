@@ -1,15 +1,14 @@
 pipeline{
     agent any
     stages{
-        stage("Testing arrival"){
+        stage("Install Dependencies"){
             steps{
-                echo "Reaching here!"
+                sh "npm install"
             }
         }
-        stage("Testing shell integration"){
+        stage("Start NodeJS Server"){
             steps{
-                // My comments
-                echo "JESUS IS LORD"
+                sh "node server.js"
             }
         }
     }
