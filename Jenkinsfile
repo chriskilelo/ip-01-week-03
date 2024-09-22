@@ -8,8 +8,9 @@ pipeline{
         }
         stage("Testing shell integration"){
             steps{
+                // My comments
                 echo "JESUS IS LORD"
             }
         }
     }
-}   
+}
